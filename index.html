@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Digital Marketing Starter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN -->
+<section id="login" class="page">
+    <div class="login-box bounce">
+        <h2>📊 Digital Marketing</h2>
+        <p>Login dulu ya 🚀</p>
+
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+
+        <button id="loginBtn">Login</button>
+        <p class="hint">admin / 123</p>
+    </div>
+</section>
+
+<!-- DASHBOARD -->
+<section id="dashboard" class="page hidden">
+    <header class="navbar">
+        <h2>📢 Dashboard</h2>
+        <button id="logoutBtn">Logout</button>
+    </header>
+
+    <div class="menu">
+        <div class="card bounce" id="toCampaign">📸 Campaign</div>
+        <div class="card bounce" id="toEdukasi">📘 Edukasi</div>
+    </div>
+</section>
+
+<!-- CAMPAIGN -->
+<section id="campaign" class="page hidden">
+    <header class="navbar">
+        <h2>📸 Campaign</h2>
+        <button class="backBtn">⬅ Back</button>
+    </header>
+
+    <div class="upload-section">
+        <input type="text" id="campaignName" placeholder="Nama Campaign">
+        <select id="marketingType">
+            <option value="">Pilih Jenis</option>
+            <option>Social Media Marketing</option>
+            <option>SEO</option>
+            <option>Content Marketing</option>
+        </select>
+        <input type="file" id="imageInput" accept="image/*">
+        <button id="addCampaignBtn">Tambah Campaign</button>
+
+        <div id="campaignList" class="campaign-list"></div>
+    </div>
+</section>
+
+<!-- EDUKASI -->
+<section id="edukasi" class="page hidden">
+    <header class="navbar">
+        <h2>📘 Edukasi</h2>
+        <button class="backBtn">⬅ Back</button>
+    </header>
+
+    <div class="info">
+        <div class="card wiggle">📱 Social Media Marketing</div>
+        <div class="card wiggle">🔍 SEO</div>
+        <div class="card wiggle">✍ Content Marketing</div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
