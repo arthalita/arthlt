@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    font-family: "Comic Sans MS", Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+}
+
+.page {
+    min-height: 100vh;
+}
+
+.hidden {
+    display: none;
+}
+
+/* LOGIN */
+#login {
+    background: linear-gradient(135deg,#fbc2eb,#a6c1ee);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background: white;
+    padding: 30px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #845ec2;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* MENU */
+.menu {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* CARD */
+.card {
+    background: #ffecd1;
+    padding: 25px;
+    width: 200px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* UPLOAD */
+.upload-section {
+    padding: 30px;
+    background: linear-gradient(120deg,#c2ffd8,#465efb);
+}
+
+.upload-section input,
+.upload-section select {
+    padding: 10px;
+    margin: 10px;
+}
+
+/* CAMPAIGN */
+.campaign-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.campaign {
+    background: white;
+    margin: 10px;
+    padding: 10px;
+    width: 180px;
+    border-radius: 15px;
+}
+
+.campaign img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* ANIMASI */
+@keyframes bounce {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0); }
+    25% { transform: rotate(2deg); }
+    50% { transform: rotate(-2deg); }
+}
+
+.wiggle:hover {
+    animation: wiggle 0.5s;
+}
